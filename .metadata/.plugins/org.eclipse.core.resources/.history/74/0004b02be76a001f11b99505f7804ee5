@@ -1,0 +1,25 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ExE_OrdemCrescente {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		int a, b, c;
+		
+		System.out.print("Digite o primeiro número: ");
+		a = teclado.nextInt();
+		System.out.print("Digite outro número: ");
+		b = teclado.nextInt();
+		System.out.print("Digite o ultimo número: ");
+		c = teclado.nextInt();
+		
+		if(a > b) {
+			
+		}
+
+	}
+
+}

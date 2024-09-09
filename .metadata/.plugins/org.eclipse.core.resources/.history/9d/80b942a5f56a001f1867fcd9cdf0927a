@@ -1,0 +1,13 @@
+package exercicios;
+
+public class ExD_EquacaoDeSegundoGrau {
+
+	public static void main(String[] args) {
+		int a, b, c, result, delta;
+		
+		System.out.println();
+		
+
+	}
+
+}

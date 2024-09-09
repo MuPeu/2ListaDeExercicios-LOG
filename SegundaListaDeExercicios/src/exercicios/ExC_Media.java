@@ -1,0 +1,42 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ExC_Media {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		double n1, n2, n3, n4, ne, md1, md2;
+		
+		System.out.print("Digite a primeira nota: ");
+		n1 = teclado.nextDouble();
+		System.out.print("Digite a segunda nota: ");
+		n2 = teclado.nextDouble();
+		System.out.print("Digite a terceira nota: ");
+		n3 = teclado.nextDouble();
+		System.out.print("Digite a quarta nota: ");
+		n4 = teclado.nextDouble();
+		
+		md1 = (n1 + n2 + n3 + n4) / 4;
+		
+		if(md1 >= 7) {
+			System.out.printf("\nO aluno foi Aprovado!\nA média do aluno é: %.1f", md1);
+		}
+		else {
+			System.out.print("\nDigite a nota exame: ");
+			ne = teclado.nextDouble();
+			
+			md2 = (md1 + ne) / 2;
+			
+			if(md2 >= 5) {
+				System.out.printf("\nO aluno foi Aprovado em Exame!\nA média do aluno é: %.1f", md2);
+			}
+			else {
+				System.out.printf("\nO aluno foi Reprovado!\nA média do aluno é: %.1f", md2);
+			}
+		}
+		teclado.close();
+
+	}
+
+}

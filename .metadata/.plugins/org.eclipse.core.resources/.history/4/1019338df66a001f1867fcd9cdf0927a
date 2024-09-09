@@ -1,0 +1,32 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class ExD_EquacaoDeSegundoGrau {
+
+	public static void main(String[] args) {
+		Scanner teclado = new Scanner(System.in);
+		
+		double a, b, c, result, delta;
+		
+		System.out.print("Digite o valor de \"A\": ");
+		a = teclado.nextDouble();
+		System.out.print("Digite o valor de \"B\": ");
+		b = teclado.nextDouble();
+		System.out.print("Digite o valor de \"C\": ");
+		c = teclado.nextDouble();
+		
+		delta = Math.pow(b, 2) - 4*a*c;
+		
+		if (delta < 0) {
+			System.out.printf("Não há solução real.\nDelta é: %.2f");
+		}
+		else if(delta > 0) {
+			System.out.printf("Há duas soluções reais, e diferentes.\nDelta é: %.2f");
+		}
+		
+		teclado.close();
+
+	}
+
+}
